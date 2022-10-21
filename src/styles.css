@@ -19,8 +19,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 2rem;
-  padding: 1rem 0.5rem;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  padding-right: 60px;
 }
 
 .title {
@@ -42,13 +43,12 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding-right: 3rem;
 }
 
 .nav li:active {
-  background-color: #555;
+  color: #708090;
 }
 
 .nav li:hover {
-  background-color: #777;
+  color: #4e5d6b;
 }
