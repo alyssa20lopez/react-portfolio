@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 body {
   margin: 0;
+  background-color: #E5E4E2;
 }
 
 .container {
@@ -12,13 +14,13 @@ body {
 }
 
 .nav {
-  background-color: #333;
+  background-color: #708090;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
 .title {

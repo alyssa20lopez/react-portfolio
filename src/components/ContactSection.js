@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { MdEmail, MdLocalPhone } from 'react-icons/md';
+import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
 import SectionTitle from "./SectionTitle";
-import ContactForm from "./ContactForm";
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
@@ -55,8 +56,8 @@ export default function ContactSection() {
         <SectionTitle heading="Contact" subheading="Get in touch!" />
         <div className="contact_wrapper">
           <div className="left">
-            <ContactInfo icon={<mdLocalPhone />} text="(772) 302-0824" />
-            <ContactInfo icon={<mdEmail />} text="alyssa20lopez@gmail.com" />
+            <ContactInfo icon={<MdLocalPhone />} text="(772) 302-0824" />
+            <ContactInfo icon={<MdEmail />} text="alyssa20lopez@gmail.com" />
             <ContactInfo text="Raleigh, North Carolina" />
           </div>
           <div className="right">

@@ -1,6 +1,7 @@
 import React from "react";
 import ContactInfo from "../components/ContactInfo";
 import ContactSection from "../components/ContactSection";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
             <ContactInfo />
           </div>
           <div className="right">
-            Contact Form
+            <ContactForm />
           </div>
         </div>
       </div>

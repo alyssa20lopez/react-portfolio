@@ -5,7 +5,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import { Route, Routes } from "react-router-dom";
-import './styles/App.css'
+import "./styles.css"
 
 function App() {
   return (
