@@ -1,44 +1,27 @@
-import React, { useState } from "react";
-import "./App.css";
-import About from "./pages/About";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
-
-function renderPage(currentPage) {
-  if (currentPage === "About") {
-    return <About />;
-  }
-  if (currentPage === "Contact") {
-    return <Contact />;
-  }
-  if (currentPage === "Portfolio") {
-    return <Portfolio />;
-  }
-  if (currentPage === "Resume") {
-    return <Resume />;
-  }
-}
+import { Route, Routes } from "react-router-dom";
+import './styles/App.css'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("About");
   return (
-    <div>
-      <nav>
-        <a onClick={() => setCurrentPage("About")}>About</a>
-      </nav>
-      <nav>
-        <a onClick={() => setCurrentPage("Contact")}>Contact</a>
-      </nav>
-      <nav>
-        <a onClick={() => setCurrentPage("Portfolio")}>Portfolio</a>
-      </nav>
-      <nav>
-        <a onClick={() => setCurrentPage("Resume")}>Resume</a>
-      </nav>
-      {renderPage(currentPage)}
-    </div>
-  );
+    <>
+      <Navigation />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+      </div>
+      <Footer />
+    </>
+  )
 }
 
 export default App;

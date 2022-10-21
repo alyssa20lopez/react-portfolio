@@ -1,0 +1,7 @@
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 4px;
+  font-size: 13px;
+}
