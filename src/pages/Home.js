@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className='home'>
       <div>
-        <img style={{ width: 300, height: 300 }} src={profile} alt="Profile Image"/>
+        <img style={{ width: "300", height: 300 }} src={profile} alt="Profile"/>
       </div>
       <div className='about-me'>
         <h2> Hi, my name is Alyssa!</h2>

@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 4px;
+  margin-top: 8px;
   font-size: 13px;
 }
+
+
+
