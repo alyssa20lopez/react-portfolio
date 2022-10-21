@@ -15,7 +15,7 @@ function Footer() {
         <EmailIcon />
         <GitHubIcon /> */}
       </div>
-      <p> &copy; 2022 </p>
+      <p> &copy; 2022 Alyssa Lopez</p>
     </div>
   )
 }
