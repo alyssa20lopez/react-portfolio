@@ -1,22 +1,10 @@
 import React from "react";
-import ContactInfo from "../components/ContactInfo";
 import ContactSection from "../components/ContactSection";
-import ContactForm from "../components/ContactForm";
 
-const Contact = () => {
+export default function Contact() {
   return (
-      <div>
-        <ContactSection heading="Contact" subheading="Get in touch!" />
-        <div className="contactSection__wrapper">
-          <div className="left">
-            <ContactInfo />
-          </div>
-          <div className="right">
-            <ContactForm />
-          </div>
-        </div>
-      </div>
+    <>
+      <ContactSection />
+    </>
   );
-};
-
-export default Contact;
+}
