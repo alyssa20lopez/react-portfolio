@@ -14,9 +14,9 @@ This application is a react portfolio using the latest react technologies I have
 
 ## Submission
 
-[Heroku Link](https://react-portfolio22.herokuapp.com/)
+[Deployed Application](https://alyssa20lopez.github.io/react-portfolio/)
 
 ## Visuals
 Here is a visual of the front-end of the webpage design!
 
-![Alt text](./react-portfolio.png)
+![Alt text](./src/images/react-portfolio.png)
