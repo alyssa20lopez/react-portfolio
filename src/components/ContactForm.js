@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
-const FormStyles = styled.form`
+const FormStyle = styled.form`
   width: 100%;
   .form-group {
     width: 100%;
@@ -11,12 +11,12 @@ const FormStyles = styled.form`
     font-size: 1.8rem;
   }
   input,
-  textarea{
+  textarea {
     width: 100%;
     font-size: 2rem;
     padding: 1.2rem;
-    color: var(--gray-1);
-    background-color: var(--deep-dark);
+    color: #E5E4E2;
+    background-color: #708090;
     outline: none;
     border: none;
     border-radius: 8px;
@@ -26,7 +26,7 @@ const FormStyles = styled.form`
     min-height: 250px;
     resize: vertical;
   }
-  button[type="submit"] {
+  button[type='submit'] {
     background-color: var(--gray-1);
     color: var(--black);
     font-size: 2rem;
@@ -40,53 +40,50 @@ const FormStyles = styled.form`
 `;
 
 export default function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   return (
-    <div>
-      <FormStyles>
-        <div classemail="form-group">
+    <>
+      <FormStyle>
+        <div className="form-group">
           <label htmlFor="name">
-            {" "}
-            Your name
+            Your Name
             <input
               type="text"
               id="name"
-              email="name"
+              name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </label>
         </div>
-        <div classemail="form-group">
+        <div className="form-group">
           <label htmlFor="email">
-            {" "}
-            Your email
+            Your Email
             <input
-              type="text"
+              type="email"
               id="email"
-              email="email"
+              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </label>
         </div>
-        <div classemail="form-group">
+        <div className="form-group">
           <label htmlFor="message">
-            {" "}
             Your message
-            <input
+            <textarea
               type="text"
               id="message"
-              email="message"
+              name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
           </label>
         </div>
         <button type="submit">Send</button>
-      </FormStyles>
-    </div>
+      </FormStyle>
+    </>
   );
 }
