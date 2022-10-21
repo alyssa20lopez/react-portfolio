@@ -4,17 +4,22 @@ import styled from 'styled-components';
 import PText from './PText';
 
 const ItemStyles = styled.div`
-  padding: 2rem;
+  padding-left: 2.5rem;
+  margin-top: 3rem;
+  padding-right: 1.5rem;
   background-color: #708090;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  font-size: 20px;
   .icon {
-    color: white;
+    color: black;
     background-color: #E5E4E2;
-    padding: 1.5rem;
+    height: 70px;
+    width: 65px;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;

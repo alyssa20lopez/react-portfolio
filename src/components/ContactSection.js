@@ -6,11 +6,14 @@ import ContactInfo from "./ContactInfo";
 import SectionTitle from "./SectionTitle";
 
 const ContactSectionStyle = styled.div`
-  padding: 10rem 0;
+  padding-right: 4rem;
+  .text {
+    font-size: 1.5rem;
+  }
   .contact_wrapper {
     display: flex;
     gap: 5rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
     justify-content: space-between;
     position: relative;
   }
@@ -18,15 +21,16 @@ const ContactSectionStyle = styled.div`
     position: absolute;
     content: '';
     width: 2px;
-    height: 50%;
+    height: 75%;
     background-color: #708090;
     left: 50%;
-    top: 30%
+    top: 20%
     transform: translate(-50%, -50%);
   }
   .left {
     width: 100%;
     max-width: 500px;
+    padding-left: 50px;
   }
   .right {
     width: 100%;

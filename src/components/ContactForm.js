@@ -8,12 +8,12 @@ const FormStyle = styled.form`
     margin-bottom: 2rem;
   }
   label {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   input,
   textarea {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1.2rem;
     color: #E5E4E2;
     background-color: #708090;
@@ -23,17 +23,17 @@ const FormStyle = styled.form`
     margin-top: 1rem;
   }
   textarea {
-    min-height: 250px;
+    min-height: 200px;
     resize: vertical;
   }
   button[type='submit'] {
-    background-color: var(--gray-1);
+    background-color: white;
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline-block;
     outline: none;
-    border: none;
     padding: 1rem 4rem;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
   }
