@@ -19,4 +19,4 @@ This application is a react portfolio using the latest react technologies I have
 ## Visuals
 Here is a visual of the front-end of the webpage design!
 
-![Alt text](./src/images/react-portfolio.png)
+![Screenshot of React Portfolio](./src/images/react-portfolio.png)
